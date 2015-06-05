@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import os
+import sys
+
+os.system('osascript -e \'tell app "Things.app" to parse quicksilver input "%s"\'' % ' '.join(sys.argv[1:]))

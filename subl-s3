@@ -1,0 +1,3 @@
+filename=`basename $1`
+aws s3 cp $1 /tmp/
+subl /tmp/$filename

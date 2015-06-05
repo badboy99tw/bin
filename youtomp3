@@ -1,0 +1,4 @@
+#!/bin/bash
+youtube-dl -o tmp.flv $1;
+ffmpeg -i tmp.flv $2;
+rm tmp.flv;
